@@ -18,7 +18,7 @@ const User = () => {
   }, []);
 
   const deleteUser = async (userId) => {
-    await axios.delete(`http://localhost:3000/api/delete/${userId}`)
+    await axios.delete(`https://mongo-crud-ten.vercel.app/api/delete/${userId}`)
     .then((res)=>{
       setUser((prevUser)=> prevUser.filter((user)=> user._id !== userId))
       toast.success(res.data.msg, {position: 'top-right'})

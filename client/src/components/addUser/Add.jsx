@@ -22,7 +22,7 @@ const Add = () => {
     }
     const submitForm = async(e) => {
       e.preventDefault();
-      await axios.post("http://localhost:3000/api/create", user)
+      await axios.post("https://mongo-crud-ten.vercel.app/api/create", user)
       .then((res)=>{
         toast.success(res.data.msg, {position: "top-right"})
         navigate("/");

@@ -21,7 +21,7 @@ const Edit = () => {
   };
 
   useEffect(()=>{
-    axios.get(`http://localhost:3000/api/getone/${id}`)
+    axios.get(`https://mongo-crud-ten.vercel.app/api/getone/${id}`)
     .then((res)=>{
       
       setUser(res.data)
@@ -33,7 +33,7 @@ const Edit = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     await axios
-      .put(`http://localhost:3000/api/update/${id}`, user)
+      .put(`https://mongo-crud-ten.vercel.app/api/update/${id}`, user)
       
       .then((res) => {
         toast.success(res.data.msg, { position: "top-right" });
