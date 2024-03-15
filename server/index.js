@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors(
     {
         origin: ["https://mongo-crud-frontend.vercel.app/"],
-        methods: ["POST", "GET"],
+        methods: ["POST", "GET", "PUT", "DELETE"],
         credentials: true
     }
 ));
