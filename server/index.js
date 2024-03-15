@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors(
     {
-        origin: ["https://mongo-crud-ten.vercel.app"],
+        origin: ["https://mongo-crud-frontend.vercel.app/"],
         methods: ["POST", "GET"],
         credentials: true
     }
