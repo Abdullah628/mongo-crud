@@ -9,7 +9,7 @@ const User = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:3000/api/getAll");
+      const response = await axios.get("https://mongo-crud-ten.vercel.app/api/getAll");
       setUser(response.data);
     };
 
